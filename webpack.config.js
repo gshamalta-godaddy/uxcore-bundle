@@ -41,6 +41,10 @@ const config = {
         }
       },
       {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: ['file-loader', 'image-webpack-loader']
+      },
+      {
         test: /\.css$/i,
         use: ['style-loader', {
           loader: 'css-loader',
